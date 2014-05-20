@@ -1,6 +1,7 @@
 module FunWithStrings
   def palindrome?
-    # your code here
+    str = self.downcase.gsub(/[^a-z]/i, '')
+    str == str.reverse
   end
   def count_words
     # your code here
